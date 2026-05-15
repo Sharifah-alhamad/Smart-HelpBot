@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Smart Help Bot</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <button class="chat-button" onclick="toggleChat()">💬</button>
+
+    <div class="chat-box" id="chatBox">
+        <div class="chat-header">
+            <div class="bot-info">
+                <img src="pro/prodesign.jpeg" alt="Bot Logo" class="bot-avatar">
+                <div class="bot-title">
+                    <div class="bot-main">Pro Design</div>
+                    <div class="bot-sub">HelpBot</div>
+                </div>
+            </div>
+            <button onclick="toggleChat()">×</button>
+        </div>
+
+        <div class="chat-body" id="chatBody">
+            <div class="message bot">Hello! How can I help you?</div>
+        </div>
+
+        <div class="chat-input">
+            <div class="input-wrapper">
+                <input type="text" id="userInput" placeholder="Ask me anything..." onkeydown="handleKey(event)">
+                <button id="send-button" onclick="sendMessage()">➤</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
